@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <button id="theme-toggle" aria-label="Toggle Dark/Light Theme">🌙</button>
+    <div class="about"> 
+        <p>My Portfolio</p>
+        <h1 id="title">Backend Software Developer</h1>
+        <p id="subtitle">
+            I’m <span class="highlight-text">Ruben Dreyer</span>, a backend developer from
+            <span class="highlight-text">South Africa</span> with 2 years of experience. 
+            I’ve created mobile apps and web platforms for millions of users and led projects 
+            for fast-growing startups. I blend innovative design with user insights to craft 
+            functional, exceptional products.
+        </p>
+        
+        
+        <div class="experience-container">
+            <h2 class="section" style="padding-top: 150px;">My experience</h2>
+            <section class="hidden">
+                <div class="experience-item">
+                    <div class="year"><p>2022 - 2024</p></div>
+                    <div class="description">
+                        <p style="color: var(--text-color);">Cross-Platform Cryptocurrency Application</p>
+                        <p style="margin:0">Developed a cross-platform cryptocurrency app for iOS and Android, showcasing live price updates, candlestick charts, and detailed coin pair analytics.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="hidden">
+                <div class="experience-item">
+                    <div class="year"><p></p></div>
+                    <div class="description">
+                        <p style="color: var(--text-color);">Built Cryptocurrency Screener Website</p>
+                        <p>Built a cryptocurrency screener website summarizing data for 300+ coins. Integrated candlestick patterns and technical indicators to help users quickly identify market trends.</p>
+                        <!-- <p style="font-size: 13px">Python • Flask • Javascript • HTML • CSS</p> -->
+                    </div>
+                </div>
+            </section>
+            <section class="hidden">
+                <div class="experience-item">
+                    <div class="year"><p></p></div>
+                    <div class="description">
+                        <p style="color: var(--text-color);">Created Automated Trading Bot</p>
+                        <p>Created and deployed an automated trading bot on AWS. The bot analyzed historical price data to identify bullish opportunities and autonomously placed buy orders, enhancing investment strategies.</p>
+                        <!-- <p style="font-size: 13px">NodeJS • API</p> -->
+                    </div>
+                </div>
+            </section>
+
+            <section class="hidden" style="padding-top: 50px">
+                <h2 class="section">Education</h2>
+            </section>
+
+            <section class="hidden">
+                <div class="experience-item">
+                    <div class="year"><p>2024</p></div>
+                    <div class="description">
+                        <p style="color: var(--text-color);">Final year university</p>
+                        <p style="margin:0">Gained expertise in databases, artificial intelligence, decision support systems, computer networks, and operating systems, enhancing technical depth and problem-solving abilities.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="hidden">
+                <div class="experience-item">
+                    <div class="year"><p>2023</p></div>
+                    <div class="description">
+                        <p style="color: var(--text-color);">Second year university</p>
+                        <p>Learned Java, systems analysis, and information security while leading a group project to create a messaging app for improved student-lecturer communication using agile methodologies.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="hidden">
+                <div class="experience-item">
+                    <div class="year"><p>2022</p></div>
+                    <div class="description">
+                        <p style="color: var(--text-color);">First year university</p>
+                        <p>Built foundational skills in Python programming, mathematics, statistics, and business management, fostering analytical thinking and understanding organizational dynamics.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+
+
+
+        <section class="projects">
+            <h2 class="section" style="padding-top: 150px;">Selected work</h2>
+            <div class="project-item project-hidden">
+                <div class="image-container">
+                    <img src="assets/images/discovery/preview.png" width="250px" alt="Project Preview" onclick="openCarousel('discovery', 9)" >
+                    <div class="hover-overlay"><p style="color: white">VIEW</p></div>
+                </div>
+                <div class="project-description">
+                    <!-- <p>2024</p> -->
+                    <p class="title" style="color: var(--text-color); font-size: 16px; font-weight: 400;">1. Discovery Safe Routes</p>
+                    <p>Developed a Discovery Insure clone using Flutter and Python, integrating Safe Routes with real-time, OSRM-powered routing to optimize user safety by dynamically avoiding high-risk areas.</p>
+                    <!-- <p class="title" style="color: var(--text-color); font-size: 14px; text-decoration: underline; cursor: pointer;">Try it out</p> -->
+                    <br>
+                    <p>Flutter • Python • OSRM</p>
+                </div>
+            </div>
+            <br>
+            <div class="project-item project-hidden">
+                <div class="image-container">
+                    <img src="assets/images/netflix/preview.png" width="250px" alt="Project Preview" onclick="openCarousel('netflix', 9)">
+                    <div class="hover-overlay"><p style="color: white">VIEW</p></div>
+                </div>
+                
+
+                <div class="project-description">
+                    <!-- <p>2024</p> -->
+                    <p class="title" style="color: var(--text-color); font-size: 16px; font-weight: 400;">2. Netflix clone with TMDB</p>
+                    <p>A responsive Netflix clone built with Flutter and Python, integrating The Movie Database API to display the latest, popular, and newly released movies. The Python backend retrieves movie data, which is accessed by the Flutter frontend, also featuring a video player to stream trailers for selected movies.</p>
+                    <br>
+                    <p>Flutter • Python • API </p>
+                </div>
+            </div>
+            <br>
+            <div class="project-item project-hidden">
+                <div class="image-container" onclick="openVideo('assets/images/nwu/screen1.mp4')">
+                    <img src="assets/images/nwu/preview.png" width="250px" alt="Project Preview" onclick="openCarousel('nwu', 5)" >
+                    <div class="hover-overlay"><p style="color: white">VIEW</p></div>
+                </div>
+                
+                <div class="project-description">
+                    <!-- <p>2024</p> -->
+                    <p class="title" style="color: var(--text-color); font-size: 16px; font-weight: 400;">3. Second year project</p>
+                    <p>A messaging app built with Flutter and Firebase for a university project, featuring user authentication, group creation, announcements, and a ChatGPT-powered AI assistant.</p>
+                    <br>
+                    <p>Flutter • Firebase</p>
+                </div>
+            </div>
+            <br>
+            <div class="project-item project-hidden">
+                <div class="image-container">
+                    <img src="assets/images/chat/preview.png" width="250px" alt="Project Preview" onclick="openCarousel('chat', 4)">
+                    <div class="hover-overlay"><p style="color: white">VIEW</p></div>
+                </div>
+                <div class="project-description">
+                    <p class="title" style="color: var(--text-color); font-size: 16px; font-weight: 400;">4. Interactive chat application</p>
+                    <p>An interactive messaging app built with Flutter, Node.js, and MongoDB, allowing users to resize, drag and drop messsages, and combine emojis. It features token-based authentication, real-time messaging with WebSocket, and an encrypted AES MongoDB database for secure user data storage.</p>
+                    <br>
+                    <p>Flutter • NodeJS • MongoDB</p>
+                </div>
+            </div>
+            <br>
+            <div class="project-item project-hidden" style="position: relative;">
+                <div class="image-container">
+                    <img src="assets/images/chess/preview.png" width="250px" alt="Project Preview"  style="display: block;" onclick="openVideo('assets/images/chess/screen1.mp4')">
+                </div>
+
+                <div class="play-button" style="
+                    position: absolute; 
+                    top: 50%; 
+                    left: 18%; 
+                    transform: translate(-50%, -50%); 
+                    background-color: black; 
+                    opacity: 0.7; 
+                    border-radius: 100px; 
+                    padding: 10px 12px; 
+                    display: flex; 
+                    align-items: center; 
+                    cursor: pointer;
+                    justify-content: center;">
+                    <span style="
+                        font-size: 20px; 
+                        color: white; 
+                        font-weight: bold;
+                        margin-left: 4px;">
+                        ▶
+                    </span>
+                </div>
+
+                <div class="project-description">
+                    <p class="title" style="color: var(--text-color); font-size: 16px; font-weight: 400;">5. Chess analysis</p>
+                    <p>A custom-built AI designed to play Super Mario Bros., developed from scratch using the NEAT (NeuroEvolution of Augmenting Topologies) algorithm. This AI dynamically learns and evolves strategies to navigate levels efficiently.</p>
+                    <br>
+                    <p>Python • PyGame</p>
+                </div>
+            </div>
+            <br>
+            <div class="project-item project-hidden" style="position: relative;">
+                <div class="image-container">
+                    <img src="assets/images/mario/preview.png" width="250px" alt="Project Preview"  style="display: block;" onclick="openVideo('assets/images/mario/screen1.mp4')">
+                </div>
+                
+                <div class="play-button" style="
+                    position: absolute; 
+                    top: 50%; 
+                    left: 18%; 
+                    transform: translate(-50%, -50%); 
+                    background-color: black; 
+                    opacity: 0.7; 
+                    border-radius: 100px; 
+                    padding: 10px 12px; 
+                    display: flex; 
+                    align-items: center; 
+                    cursor: pointer;
+                    justify-content: center;">
+                    <span style="
+                        font-size: 20px; 
+                        color: white; 
+                        font-weight: bold;
+                        margin-left: 4px;">
+                        ▶
+                    </span>
+                </div>
+            
+                <div class="project-description" style="position: relative;">
+                    <p class="title" style="color: var(--text-color); font-size: 16px; font-weight: 400;">6. Super Mario Artificial Intelligence</p>
+                    <p>An AI designed to play Super Mario Bros., developed from scratch using the NEAT (NeuroEvolution of Augmenting Topologies) algorithm. This AI dynamically learns and evolves strategies to navigate levels efficiently.</p>
+                    <br>
+                    <p>Javascript • HTML • CSS</p>                    
+                </div>
+            </div>
+            <br>
+            <div class="project-item project-hidden" style="position: relative;">
+                <div class="image-container">
+                    <img src="assets/images/ai/preview.png" width="250px" alt="Project Preview"  style="display: block;" onclick="openVideo('assets/images/ai/screen1.mp4')">
+                </div>
+
+                <div class = "play-button" style="
+                    position: absolute; 
+                    top: 50%; 
+                    left: 18%; 
+                    transform: translate(-50%, -50%); 
+                    background-color: black; 
+                    opacity: 0.7; 
+                    border-radius: 100px; 
+                    padding: 10px 12px; 
+                    display: flex; 
+                    align-items: center; 
+                    cursor: pointer;
+                    justify-content: center;">
+                    <span style="
+                        font-size: 20px; 
+                        color: white; 
+                        font-weight: bold;
+                        margin-left: 4px;">
+                        ▶
+                    </span>
+                </div>
+
+                <div class="project-description">
+
+                    <p class="title" style="color: var(--text-color); font-size: 16px; font-weight: 400;">7. Flappy Bird Artificial Intelligence</p>
+                    <p>An AI designed to play Super Mario Bros., developed from scratch using the NEAT (NeuroEvolution of Augmenting Topologies) algorithm. This AI dynamically learns and evolves strategies to navigate levels efficiently.</p>
+                    <br>
+                    <p>Python • PyGame</p>
+                </div>
+            </div>
+        </section>
+
+        <h2 class="section" style="padding-top: 150px; text-align: center;">My skills</h2>
+        <div class="skills-container">
+            <div class="skill">Flutter</div>
+            <div class="skill">Python</div>
+            <div class="skill">NodeJS</div>
+            <div class="skill">Java</div>
+            <div class="skill">C#</div>
+            <div class="skill">Pascal</div>
+            <div class="skill">MongoDB</div>
+            <div class="skill">Figma</div>
+            <div class="skill">Flask</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Git</div>
+            <div class="skill">Teamwork</div>
+        </div>
+
+        <h2 class="section" style="padding-top: 150px; text-align: center;">Contact me</h2>
+
+        <div class="social-icons" style="text-align: center;">
+            <a href="https://wa.me/+27729717922" target="_blank">
+                <img src="assets/images/whatsapp.svg" alt="WhatsApp" class="social-icon">
+            </a>
+            <a href="https://www.linkedin.com/in/rubendreyer/" target="_blank">
+                <img src="assets/images/linkedin.svg" alt="LinkedIn" class="social-icon">
+            </a>
+            <a href="https://github.com/RubenD582/" target="_blank">
+                <img src="assets/images/github.svg" alt="GitHub" class="social-icon">
+            </a>
+        </div>
+
+
+
+
+        <div id="video-modal" class="video-modal" style="display: none">
+            <div class="video-container">
+                <span class="close-button" onclick="closeCarousel()">&#10005;</span>
+                <video id="video-player" controls>
+                    <source id="video-source" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        <div id="carousel-modal" class="carousel-modal" style="display: none">
+            <div class="carousel-container">
+                <span class="close-button" onclick="closeCarousel()">&#10005;</span>
+                <img id="carousel-image" src="" alt="Carousel Image">
+                <div class="carousel-controls">
+                    <button onclick="previousImage()">&#8592;</button>
+                    <button onclick="nextImage()">&#8594;</button>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-bottom: 1000px;"></div>
+    </div>
+    
+
+    <script defer src="script.js"></script>
+</body>
+</html>
