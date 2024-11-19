@@ -386,6 +386,7 @@ a {
 
 a:hover {
     text-decoration: underline;
+
 }
 
 .social-icon:hover {
@@ -402,7 +403,7 @@ hr {
 
 @media (max-width: 768px) {
     body {
-        margin: 50% 5% 5% 5%;
+        margin: 25% 5% 5% 5%;
     }
 
     #title {
