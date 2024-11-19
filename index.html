@@ -15,9 +15,7 @@
         <p id="subtitle">
             I’m <span class="highlight-text">Ruben Dreyer</span>, a backend developer from
             <span class="highlight-text">South Africa</span> with 2 years of experience. 
-            I’ve created mobile apps and web platforms for millions of users and led projects 
-            for fast-growing startups. I blend innovative design with user insights to craft 
-            functional, exceptional products.
+            I’ve created mobile apps and websites for clients. During my studies, I gained practical experience through freelancing and the development of various projects. I enjoy to take on new challenges and continuously improve my skills.
         </p>
         
         
@@ -53,7 +51,7 @@
                 </div>
             </section>
 
-            <section class="hidden" style="padding-top: 50px">
+            <section class="hidden" style="padding-top: 150px">
                 <h2 class="section">Education</h2>
             </section>
 
@@ -66,6 +64,8 @@
                     </div>
                 </div>
             </section>
+            <br>
+            <hr>
             <section class="hidden">
                 <div class="experience-item">
                     <div class="year"><p>2023</p></div>
@@ -75,6 +75,7 @@
                     </div>
                 </div>
             </section>
+            <hr>
             <section class="hidden">
                 <div class="experience-item">
                     <div class="year"><p>2022</p></div>
@@ -88,8 +89,6 @@
 
 
 
-
-
         <section class="projects">
             <h2 class="section" style="padding-top: 150px;">Selected work</h2>
             <div class="project-item project-hidden">
@@ -98,15 +97,21 @@
                     <div class="hover-overlay"><p style="color: white">VIEW</p></div>
                 </div>
                 <div class="project-description">
-                    <!-- <p>2024</p> -->
-                    <p class="title" style="color: var(--text-color); font-size: 16px; font-weight: 400;">1. Discovery Safe Routes</p>
+                    <a href="https://github.com/RubenD582/Safe-Routes" style="display: flex; align-items: center; gap: 8px; text-decoration: none;">
+                        <p class="title" style="color: var(--text-color); font-size: 16px; font-weight: 400; cursor: pointer;">1. Discovery Safe Routes</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M7 17L17 7" />
+                            <path d="M7 7H17V17" />
+                        </svg>
+                          
+                    </a>
+                      
                     <p>Developed a Discovery Insure clone using Flutter and Python, integrating Safe Routes with real-time, OSRM-powered routing to optimize user safety by dynamically avoiding high-risk areas.</p>
                     <!-- <p class="title" style="color: var(--text-color); font-size: 14px; text-decoration: underline; cursor: pointer;">Try it out</p> -->
-                    <br>
                     <p>Flutter • Python • OSRM</p>
                 </div>
             </div>
-            <br>
+
             <div class="project-item project-hidden">
                 <div class="image-container">
                     <img src="assets/images/netflix/preview.png" width="250px" alt="Project Preview" onclick="openCarousel('netflix', 9)">
@@ -116,15 +121,20 @@
 
                 <div class="project-description">
                     <!-- <p>2024</p> -->
-                    <p class="title" style="color: var(--text-color); font-size: 16px; font-weight: 400;">2. Netflix clone with TMDB</p>
+                    <a href="https://github.com/RubenD582/Netflix" style="display: flex; align-items: center; gap: 8px; text-decoration: none;">
+                        <p class="title" style="color: var(--text-color); font-size: 16px; font-weight: 400; cursor: pointer;">2. Netflix clone with TMDB</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M7 17L17 7" />
+                            <path d="M7 7H17V17" />
+                        </svg>
+                    </a>
                     <p>A responsive Netflix clone built with Flutter and Python, integrating The Movie Database API to display the latest, popular, and newly released movies. The Python backend retrieves movie data, which is accessed by the Flutter frontend, also featuring a video player to stream trailers for selected movies.</p>
-                    <br>
                     <p>Flutter • Python • API </p>
                 </div>
             </div>
-            <br>
+
             <div class="project-item project-hidden">
-                <div class="image-container" onclick="openVideo('assets/images/nwu/screen1.mp4')">
+                <div class="image-container">
                     <img src="assets/images/nwu/preview.png" width="250px" alt="Project Preview" onclick="openCarousel('nwu', 5)" >
                     <div class="hover-overlay"><p style="color: white">VIEW</p></div>
                 </div>
@@ -133,11 +143,10 @@
                     <!-- <p>2024</p> -->
                     <p class="title" style="color: var(--text-color); font-size: 16px; font-weight: 400;">3. Second year project</p>
                     <p>A messaging app built with Flutter and Firebase for a university project, featuring user authentication, group creation, announcements, and a ChatGPT-powered AI assistant.</p>
-                    <br>
                     <p>Flutter • Firebase</p>
                 </div>
             </div>
-            <br>
+
             <div class="project-item project-hidden">
                 <div class="image-container">
                     <img src="assets/images/chat/preview.png" width="250px" alt="Project Preview" onclick="openCarousel('chat', 4)">
@@ -146,113 +155,61 @@
                 <div class="project-description">
                     <p class="title" style="color: var(--text-color); font-size: 16px; font-weight: 400;">4. Interactive chat application</p>
                     <p>An interactive messaging app built with Flutter, Node.js, and MongoDB, allowing users to resize, drag and drop messsages, and combine emojis. It features token-based authentication, real-time messaging with WebSocket, and an encrypted AES MongoDB database for secure user data storage.</p>
-                    <br>
                     <p>Flutter • NodeJS • MongoDB</p>
                 </div>
             </div>
-            <br>
+
             <div class="project-item project-hidden" style="position: relative;">
                 <div class="image-container">
                     <img src="assets/images/chess/preview.png" width="250px" alt="Project Preview"  style="display: block;" onclick="openVideo('assets/images/chess/screen1.mp4')">
                 </div>
 
-                <div class="play-button" style="
-                    position: absolute; 
-                    top: 50%; 
-                    left: 18%; 
-                    transform: translate(-50%, -50%); 
-                    background-color: black; 
-                    opacity: 0.7; 
-                    border-radius: 100px; 
-                    padding: 10px 12px; 
-                    display: flex; 
-                    align-items: center; 
-                    cursor: pointer;
-                    justify-content: center;">
-                    <span style="
-                        font-size: 20px; 
-                        color: white; 
-                        font-weight: bold;
-                        margin-left: 4px;">
-                        ▶
-                    </span>
-                </div>
-
                 <div class="project-description">
-                    <p class="title" style="color: var(--text-color); font-size: 16px; font-weight: 400;">5. Chess analysis</p>
+                    <a href="https://github.com/RubenD582/Chess-Evaluation" style="display: flex; align-items: center; gap: 8px; text-decoration: none;">
+                        <p class="title" style="color: var(--text-color); font-size: 16px; font-weight: 400; cursor: pointer;">5. Chess analysis</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M7 17L17 7" />
+                            <path d="M7 7H17V17" />
+                        </svg>
+                    </a>
                     <p>A custom-built AI designed to play Super Mario Bros., developed from scratch using the NEAT (NeuroEvolution of Augmenting Topologies) algorithm. This AI dynamically learns and evolves strategies to navigate levels efficiently.</p>
-                    <br>
                     <p>Python • PyGame</p>
                 </div>
             </div>
-            <br>
+
             <div class="project-item project-hidden" style="position: relative;">
                 <div class="image-container">
                     <img src="assets/images/mario/preview.png" width="250px" alt="Project Preview"  style="display: block;" onclick="openVideo('assets/images/mario/screen1.mp4')">
                 </div>
-                
-                <div class="play-button" style="
-                    position: absolute; 
-                    top: 50%; 
-                    left: 18%; 
-                    transform: translate(-50%, -50%); 
-                    background-color: black; 
-                    opacity: 0.7; 
-                    border-radius: 100px; 
-                    padding: 10px 12px; 
-                    display: flex; 
-                    align-items: center; 
-                    cursor: pointer;
-                    justify-content: center;">
-                    <span style="
-                        font-size: 20px; 
-                        color: white; 
-                        font-weight: bold;
-                        margin-left: 4px;">
-                        ▶
-                    </span>
-                </div>
             
                 <div class="project-description" style="position: relative;">
-                    <p class="title" style="color: var(--text-color); font-size: 16px; font-weight: 400;">6. Super Mario Artificial Intelligence</p>
+                    <a href="https://github.com/RubenD582/SuperMarioAI" style="display: flex; align-items: center; gap: 8px; text-decoration: none;">
+                        <p class="title" style="color: var(--text-color); font-size: 16px; font-weight: 400; cursor: pointer;">6. Super Mario Artificial Intelligence</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M7 17L17 7" />
+                            <path d="M7 7H17V17" />
+                        </svg>
+                    </a>
                     <p>An AI designed to play Super Mario Bros., developed from scratch using the NEAT (NeuroEvolution of Augmenting Topologies) algorithm. This AI dynamically learns and evolves strategies to navigate levels efficiently.</p>
-                    <br>
                     <p>Javascript • HTML • CSS</p>                    
                 </div>
             </div>
-            <br>
+
             <div class="project-item project-hidden" style="position: relative;">
                 <div class="image-container">
                     <img src="assets/images/ai/preview.png" width="250px" alt="Project Preview"  style="display: block;" onclick="openVideo('assets/images/ai/screen1.mp4')">
                 </div>
 
-                <div class = "play-button" style="
-                    position: absolute; 
-                    top: 50%; 
-                    left: 18%; 
-                    transform: translate(-50%, -50%); 
-                    background-color: black; 
-                    opacity: 0.7; 
-                    border-radius: 100px; 
-                    padding: 10px 12px; 
-                    display: flex; 
-                    align-items: center; 
-                    cursor: pointer;
-                    justify-content: center;">
-                    <span style="
-                        font-size: 20px; 
-                        color: white; 
-                        font-weight: bold;
-                        margin-left: 4px;">
-                        ▶
-                    </span>
-                </div>
-
                 <div class="project-description">
+                    <a href="https://github.com/RubenD582/FlappyBird-AI" style="display: flex; align-items: center; gap: 8px; text-decoration: none;">
+                        <p class="title" style="color: var(--text-color); font-size: 16px; font-weight: 400; cursor: pointer;">7. Flappy Bird Artificial Intelligence</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M7 17L17 7" />
+                            <path d="M7 7H17V17" />
+                        </svg>
+                    </a>
 
-                    <p class="title" style="color: var(--text-color); font-size: 16px; font-weight: 400;">7. Flappy Bird Artificial Intelligence</p>
                     <p>An AI designed to play Super Mario Bros., developed from scratch using the NEAT (NeuroEvolution of Augmenting Topologies) algorithm. This AI dynamically learns and evolves strategies to navigate levels efficiently.</p>
-                    <br>
                     <p>Python • PyGame</p>
                 </div>
             </div>
@@ -274,9 +231,16 @@
             <div class="skill">Teamwork</div>
         </div>
 
-        <h2 class="section" style="padding-top: 150px; text-align: center;">Contact me</h2>
 
-        <div class="social-icons" style="text-align: center;">
+
+        <h2 class="section" style="padding-top: 100px; text-align: center;">Achievements</h2>
+        <p style="text-align: center; margin: 0">Bachelors of Information Technology</p>
+        <p style="text-align: center; margin: 0; margin-top: 5px">Golden key international honor society</p>
+
+
+
+        <!-- <h2 class="section" style="padding-top: 100px; text-align: center;">Contact me</h2> -->
+        <div class="social-icons" style="text-align: center; margin-top: 100px;">
             <a href="https://wa.me/+27729717922" target="_blank">
                 <img src="assets/images/whatsapp.svg" alt="WhatsApp" class="social-icon">
             </a>
@@ -287,8 +251,11 @@
                 <img src="assets/images/github.svg" alt="GitHub" class="social-icon">
             </a>
         </div>
+        <p style="color: #4285F4; text-align: center; text-decoration: underline;"><a>rdreyer523@gmail.com</a></p>
 
+        
 
+        
 
 
         <div id="video-modal" class="video-modal" style="display: none">
@@ -302,17 +269,18 @@
         </div>
 
         <div id="carousel-modal" class="carousel-modal" style="display: none">
+            <span class="close-button" onclick="closeCarousel()">&#10005;</span>
             <div class="carousel-container">
-                <span class="close-button" onclick="closeCarousel()">&#10005;</span>
-                <img id="carousel-image" src="" alt="Carousel Image">
                 <div class="carousel-controls">
                     <button onclick="previousImage()">&#8592;</button>
                     <button onclick="nextImage()">&#8594;</button>
                 </div>
+                <img id="carousel-image" src="" alt="Carousel Image">
             </div>
         </div>
+        
 
-        <div style="margin-bottom: 1000px;"></div>
+        <div style="margin-bottom: 50px;"></div>
     </div>
     
 

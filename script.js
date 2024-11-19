@@ -83,11 +83,9 @@ function openVideo(videoUrl) {
     const videoSource = document.getElementById('video-source');
 
     if (videoUrl === 'assets/images/ai/screen1.mp4') {
-        videoPlayer.style.paddingLeft = '25%';
-        videoPlayer.style.width = '400px';
+        videoPlayer.style.width = '100%';
     } else {
-        videoPlayer.style.paddingLeft = '0%';
-        videoPlayer.style.width = '800px'; 
+        videoPlayer.style.width = '100%'; 
     }
     
     videoSource.src = videoUrl;
