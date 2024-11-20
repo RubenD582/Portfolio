@@ -8,7 +8,7 @@ let observer = new IntersectionObserver(
     },
     {
         root: null,
-        rootMargin: "40% 0px",
+        rootMargin: "-10% 0px",
         threshold: 0
     }
 );

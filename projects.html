@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding-top: 100px;
+            background-color: #111;
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            flex-direction: column;
+            min-height: 100vh; 
+            width: 60%; 
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 10px;
+            justify-items: center; 
+        }
+
+        .image-grid img {
+            width: 100%; 
+            max-width: 400px; 
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s ease;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        /* Adjust the number of columns based on screen size */
+        @media (max-width: 1200px) {
+            .image-grid {
+                grid-template-columns: repeat(2, 1fr); /* 2 columns for screens <= 1200px */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .image-grid {
+                grid-template-columns: repeat(1, 1fr); /* 1 column for screens <= 768px */
+            }
+        }
+
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(60px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        #project-title {
+            margin: 0;
+            font-family: 'Playfair Display', serif;
+            font-size: 40px;
+            font-weight: 400;
+            text-align: left;
+            line-height: 1.3;
+            color: var(--text-color);
+            animation: fadeInUp 1s ease-in-out;
+            transition: color 0.4s ease;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        @media (max-width: 480px) {
+            #project-title {
+                font-size: 24px;
+            }
+
+            .container {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="project-title">Project Images</h1>
+        <p id="description"></p>
+        <br><br><br>
+        <div class="image-grid" id="imageGrid"></div>
+    </div>
+
+    <script>
+        // Get the folder name from the query parameter
+        const params = new URLSearchParams(window.location.search);
+        const folder = params.get('folder');
+        const number = params.get('number');
+    
+        if (!folder) {
+            document.body.innerHTML = "<p>Error: No folder specified.</p>";
+        } else {
+            let isVideo = false;
+            const title = document.getElementById('project-title');
+            const description = document.getElementById('description');
+            if (folder == 'discovery') {
+                description.innerHTML = "Developed a Discovery Insure clone using Flutter and Python, integrating Safe Routes with real-time, OSRM-powered routing to optimize user safety by dynamically avoiding high-risk areas."
+                title.innerHTML = "Discovery Safe Routes"
+            } else if (folder == 'netflix') {
+                description.innerHTML = "A responsive Netflix clone built with Flutter and Python, integrating The Movie Database API to display the latest, popular, and newly released movies. The Python backend retrieves movie data, which is accessed by the Flutter frontend, also featuring a video player to stream trailers for selected movies."
+                title.innerHTML = "Netflix clone with TMDB"
+            } else if (folder == 'NWU') {
+                description.innerHTML = "A messaging app built with Flutter and Firebase for a university project, featuring user authentication, group creation, announcements, and a ChatGPT-powered AI assistant."
+                title.innerHTML = "Second year project"
+            } else if (folder == 'chat') {
+                description.innerHTML = "An interactive messaging app built with Flutter, Node.js, and MongoDB, allowing users to resize, drag and drop messsages, and combine emojis. It features token-based authentication, real-time messaging with WebSocket, and an encrypted AES MongoDB database for secure user data storage."
+                title.innerHTML = "Interactive chat application"
+            } else if (folder == 'chess') {
+                description.innerHTML = "Import a chess PGN and receive evaluations of your moves using Stockfish, similar to the analysis provided on Chess.com."
+                title.innerHTML = "Chess analysis"
+                isVideo = true; // Flag for showing a video
+            } else if (folder == 'mario') {
+                description.innerHTML = "An AI designed to play Super Mario Bros., developed from scratch using the NEAT (NeuroEvolution of Augmenting Topologies) algorithm. This AI dynamically learns and evolves strategies to navigate levels efficiently."
+                title.innerHTML = "Super mario AI"
+                isVideo = true;
+            } else if (folder == 'ai') {
+                description.innerHTML = "An AI made entirely from scratch, without using additional libraries in Python using Pygame. This AI uses the NEAT algorithm to learn how to play flappy bird."
+                title.innerHTML = "Flappy bird AI"
+                isVideo = true;
+            }
+    
+            const imageGrid = document.getElementById('imageGrid');
+    
+            if (isVideo) {
+                // Clear the grid and add a video player
+                imageGrid.innerHTML = ''; // Ensure no previous content exists
+    
+                const video = document.createElement('video');
+                video.src = `assets/images/${folder}/screen1.mp4`; // Path to video file
+                video.controls = true; // Adds play/pause, volume controls, etc.
+                video.style.width = '100%'; // Ensure it fits the container
+                video.style.maxWidth = '100%'; // Optional: max width for larger screens
+                video.style.borderRadius = '8px'; // Match image styling
+                video.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.3)'; // Match image styling
+                video.style.animation = 'fadeInUp 1s ease-in-out'
+    
+                imageGrid.appendChild(video); // Add the video to the grid
+            } else {
+                // Dynamically create image elements
+                for (let i = 1; i <= number; i++) {
+                    const img = document.createElement('img');
+                    img.src = `assets/images/${folder}/screen${i}.png`; // Construct image path
+                    img.alt = `Screen ${i}`;
+                    imageGrid.appendChild(img);
+                }
+            }
+        }
+    </script>
+    
+</body>
+</html>

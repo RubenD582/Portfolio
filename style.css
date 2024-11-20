@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Space+Grotesk:wght@300;400;700&display=swap');
 
 :root {
-    --bg-color: #09090b;
+    --bg-color: #000;
     --text-color: white;
     --secondary-text-color: rgb(156, 163, 175);
     --skill-bg-color: rgba(156, 163, 175, 0.25);
@@ -81,6 +81,7 @@ h2 {
     margin-bottom: 25px;
     animation: fadeInUp 1s ease-in-out;
     transition: color 0.4s ease;
+    margin-top: 150px;
 }
 
 p {
@@ -219,7 +220,7 @@ p {
 .project-hidden {
     opacity: 0;
     /* transform: translateY(100%); */
-    transition: all 1s;
+    transition: all 2s;
 }
 
 .project-show {
@@ -276,7 +277,7 @@ p {
     position: relative;
     display: inline-block;
     cursor: pointer;
-    margin-top: 0px;
+    margin: 0px;
 }
 
 
@@ -381,11 +382,13 @@ p {
 }
 
 a {
+    text-decoration: none;
     animation: fadeInUp 1s ease-in-out;
 }
 
 a:hover {
     text-decoration: underline;
+    text-decoration-color: rgba(255, 255, 255, 0.7);
 
 }
 
@@ -445,7 +448,7 @@ hr {
         position: relative;
         display: inline-block;
         cursor: pointer;
-        margin-top: 50px;
+        /* margin-top: 50px; */
     }
 }
 
@@ -467,7 +470,7 @@ hr {
     }
 
     .section {
-        margin-top: 0px;
+        margin-top: 100px;
     }
 }
 
