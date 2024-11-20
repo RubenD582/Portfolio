@@ -386,12 +386,6 @@ a {
     animation: fadeInUp 1s ease-in-out;
 }
 
-a:hover {
-    text-decoration: underline;
-    text-decoration-color: rgba(255, 255, 255, 0.7);
-
-}
-
 .social-icon:hover {
     transform: scale(1.2);
 }
