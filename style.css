@@ -50,7 +50,7 @@ body {
 
 #title {
     margin: 25px 20px 10px 0;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Space Grotesk', sans-serif;
     font-size: 40px;
     font-weight: 400;
     text-align: left;
@@ -63,6 +63,7 @@ body {
 }
 
 #subtitle {
+    line-height: 1.8;
     animation: fadeInUp 1s ease-in-out;
 }
 
@@ -82,13 +83,14 @@ h2 {
     animation: fadeInUp 1s ease-in-out;
     transition: color 0.4s ease;
     margin-top: 150px;
+    font-size: 28px;
 }
 
 p {
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 300;
-    line-height: 1.5;
+    line-height: 1.8;
     color: var(--secondary-text-color);
     animation: fadeInUp 1s ease-in-out;
     text-align: left;
@@ -103,9 +105,9 @@ p {
 }
 
 .skill {
-    padding: 5px 10px;
+    padding: 10px 15px;
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 300;
     text-align: center;
     color: var(--secondary-text-color);
@@ -183,7 +185,7 @@ p {
 }
 
 .year p, .description p {
-    font-size: 14px;
+    font-size: 15px;
     transition: color 0.4s ease;
 }
 
@@ -213,8 +215,9 @@ p {
 }
 
 .project-description p {
-    font-size: 14px;
+    font-size: 15px;
     transition: color 0.4s ease;
+    margin: 10px 0;
 }
 
 .project-hidden {
@@ -426,7 +429,7 @@ hr {
     }
 
     p {
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .carousel-container {
@@ -460,7 +463,15 @@ hr {
     }
 
     p {
-        font-size: 13px;
+        font-size: 14px;
+    }
+
+    .project-description p {
+        font-size: 14px;
+    }
+
+    .year p, .description p {
+        font-size: 14px;
     }
 
     .section {
