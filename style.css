@@ -403,7 +403,7 @@ hr {
 
 @media (max-width: 768px) {
     body {
-        margin: 25% 5% 5% 5%;
+        margin: 40% 5% 5% 5%;
     }
 
     #title {
@@ -463,15 +463,15 @@ hr {
     }
 
     p {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .project-description p {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .year p, .description p {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .section {
